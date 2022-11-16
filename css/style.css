@@ -171,19 +171,61 @@ main .container.flex {
 
 
 /* ----- FOOTER ----- */
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
 
 footer .container.flex {
     justify-content: space-between;
     padding: 20px 0;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 10px 10px 0;
+}
+
+/* INFO BOX */
 .info-box {
     width: 80%;
 }
 
+.company-name {
+    font-weight: bold;
+}
+
+.info-box li {
+    font-size: 0.8em;
+}
+
+/* SOCIAL BOX */
 .social-box {
     width: 20%;
+    text-align: right;
 }
+
+.social-box i {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.find-us {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+
 
 
 
@@ -217,7 +259,7 @@ footer .container.flex {
     border: 1px dashed black;
 } */
 
-.debug footer {
+/* .debug footer {
     background-color: blue;
     min-height: 80px;
 }
@@ -227,4 +269,4 @@ footer .container.flex {
     min-height: 60px;
     background-color: brown;
     border: 1px dashed black;
-}
+} */
