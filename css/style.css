@@ -19,7 +19,11 @@
     display: flex;
 }
 
-/* ----- HEADER ----- */
+.img-box img {
+    width: 100%;
+}
+
+
 header {
     position: fixed;
     top:0;
@@ -58,10 +62,6 @@ header li {
 }
 
 /* SHOP MENU */
-main {
-    margin-top: 70px;
-}
-
 .shop-menu li {
     margin-right: 15px;
 }
@@ -71,15 +71,16 @@ main {
     text-align: right;
 }
 
-
-
-
 /* CENTRAL COLUMN */
 .central-column img {
     height: 35px;
 }
 
 /* ----- MAIN ----- */
+main {
+    margin-top: 70px;
+}
+
 main .container.flex {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -88,10 +89,86 @@ main .container.flex {
     padding: 40px 0;
 }
 
+/* CARD */
 .card {
     width: calc(100% / 3 - 20px);
     margin-bottom: 20px;
 }
+
+/* IMG */
+.img-box {
+    width: 100%;
+    position: relative;
+}
+
+.top-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img-box:hover .top-photo {
+    display: none;
+}
+
+/* ELEMENTI SOPRA A IMG */
+.heart-box {
+    position: absolute;
+    right: 0;
+    top: 2.5%;
+    z-index: 10;
+    background-color: white;
+    padding: 10px;
+}
+
+.discount-box {
+    position: absolute;
+    left: 0;
+    bottom: 8%;
+}
+
+.discount-box > * {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.discount {
+    background-color: red;
+}
+
+.sustainability {
+    background-color: green;
+}
+
+.sustainability::after {
+    content: 'Sostenibilità';
+}
+
+/* TEXT BOX */
+.text-box .brand,
+.text-box .price,
+.text-box .discount-price {
+    font-size: 0.8em;
+}
+
+.text-box .item-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.text-box .price {
+    font-weight: bold;
+    color: red;
+}
+
+.text-box .discount-price {
+    text-decoration: line-through;
+}
+
+
 
 /* ----- FOOTER ----- */
 
@@ -124,21 +201,21 @@ footer .container.flex {
     background-color: aqua;
 }  */
 
-.debug .small-column,
+/* .debug .small-column,
 .debug .central-column {
-    /* background-color: blueviolet;
-    border: 1px dashed black; */
-}
+    background-color: blueviolet;
+    border: 1px dashed black;
+} */
 
-.debug main .container {
+/* .debug main .container {
     background-color: bisque;
-}
+} */
 
-.debug .card {
+/* .debug .card {
     min-height: 500px;
     background-color: pink;
     border: 1px dashed black;
-}
+} */
 
 .debug footer {
     background-color: blue;
