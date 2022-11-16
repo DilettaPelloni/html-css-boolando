@@ -4,3 +4,133 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ----- REGOLE GENERALI ----- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ----- HEADER ----- */
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+header .container.flex {
+    align-items: center;
+    height: 70px;
+}
+
+.small-column {
+    width: 25%;
+}
+
+.central-column {
+    width: 50%;
+    text-align: center;
+}
+
+/* SHOP MENU */
+main {
+    margin-top: 70px;
+}
+
+.shop-menu ul {
+    list-style: none;
+}
+
+.shop-menu li {
+    display: inline-block;
+}
+
+.shop-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CENTRAL COLUMN */
+.central-column img {
+    height: 30px;
+}
+
+/* ----- MAIN ----- */
+main .container.flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+.card {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+}
+
+/* ----- FOOTER ----- */
+
+footer .container.flex {
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.info-box {
+    width: 80%;
+}
+
+.social-box {
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----- DEBUG ----- */
+
+.debug header {
+    background-color: aqua;
+} 
+
+.debug .small-column,
+.debug .central-column {
+    min-height: 50px;
+    background-color: blueviolet;
+    border: 1px dashed black;
+}
+
+.debug main .container {
+    background-color: bisque;
+}
+
+.debug .card {
+    min-height: 500px;
+    background-color: pink;
+    border: 1px dashed black;
+}
+
+.debug footer {
+    background-color: blue;
+    min-height: 80px;
+}
+
+.debug .info-box,
+.debug .social-box {
+    min-height: 60px;
+    background-color: brown;
+    border: 1px dashed black;
+}
