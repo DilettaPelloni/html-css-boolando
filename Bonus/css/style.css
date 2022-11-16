@@ -1,0 +1,277 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- REGOLE GENERALI ----- */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    background-color: #FF6900;
+}
+
+header .container.flex {
+    align-items: center;
+    height: 70px;
+}
+
+.small-column {
+    width: 25%;
+}
+
+.central-column {
+    width: 50%;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* SHOP MENU */
+.shop-menu li {
+    margin-right: 15px;
+}
+
+/* USER MENU */
+.user-menu {
+    text-align: right;
+}
+
+/* CENTRAL COLUMN */
+.central-column img {
+    height: 35px;
+}
+
+/* ----- MAIN ----- */
+main {
+    margin-top: 70px;
+}
+
+main .container.flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+/* CARD */
+.card {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+}
+
+/* IMG */
+.img-box {
+    width: 100%;
+    position: relative;
+}
+
+.top-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img-box:hover .top-photo {
+    display: none;
+}
+
+/* ELEMENTI SOPRA A IMG */
+.heart-box {
+    position: absolute;
+    right: 0;
+    top: 2.5%;
+    z-index: 10;
+    background-color: white;
+    padding: 10px;
+}
+
+.heart-box:hover {
+    color: red;
+}
+
+.discount-box {
+    position: absolute;
+    left: 0;
+    bottom: 8%;
+}
+
+.discount-box > * {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+}
+
+.discount {
+    background-color: red;
+}
+
+.sustainability {
+    background-color: green;
+}
+
+.sustainability::after {
+    content: 'Sostenibilità';
+}
+
+/* TEXT BOX */
+.text-box .brand,
+.text-box .price,
+.text-box .discount-price {
+    font-size: 0.8em;
+}
+
+.text-box .item-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.text-box .price {
+    font-weight: bold;
+    color: red;
+}
+
+.text-box .discount-price {
+    text-decoration: line-through;
+}
+
+
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+footer .container.flex {
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 10px 10px 0;
+}
+
+/* INFO BOX */
+.info-box {
+    width: 80%;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.info-box li {
+    font-size: 0.8em;
+}
+
+/* SOCIAL BOX */
+.social-box {
+    width: 20%;
+    text-align: right;
+}
+
+.social-box i {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.find-us {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- DEBUG ----- */
+/* 
+.debug header {
+    background-color: aqua;
+}  */
+
+/* .debug .small-column,
+.debug .central-column {
+    background-color: blueviolet;
+    border: 1px dashed black;
+} */
+
+/* .debug main .container {
+    background-color: bisque;
+} */
+
+/* .debug .card {
+    min-height: 500px;
+    background-color: pink;
+    border: 1px dashed black;
+} */
+
+/* .debug footer {
+    background-color: blue;
+    min-height: 80px;
+}
+
+.debug .info-box,
+.debug .social-box {
+    min-height: 60px;
+    background-color: brown;
+    border: 1px dashed black;
+} */
