@@ -6,6 +6,10 @@
 }
 
 /* ----- REGOLE GENERALI ----- */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,6 +26,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 30;
+    background-color: #FF6900;
 }
 
 header .container.flex {
@@ -38,27 +43,40 @@ header .container.flex {
     text-align: center;
 }
 
+header ul {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px;
+}
+
 /* SHOP MENU */
 main {
     margin-top: 70px;
 }
 
-.shop-menu ul {
-    list-style: none;
-}
-
 .shop-menu li {
-    display: inline-block;
+    margin-right: 15px;
 }
 
-.shop-menu a {
-    text-decoration: none;
-    color: white;
+/* USER MENU */
+.user-menu {
+    text-align: right;
 }
+
+
+
 
 /* CENTRAL COLUMN */
 .central-column img {
-    height: 30px;
+    height: 35px;
 }
 
 /* ----- MAIN ----- */
@@ -101,16 +119,15 @@ footer .container.flex {
 
 
 /* ----- DEBUG ----- */
-
+/* 
 .debug header {
     background-color: aqua;
-} 
+}  */
 
 .debug .small-column,
 .debug .central-column {
-    min-height: 50px;
-    background-color: blueviolet;
-    border: 1px dashed black;
+    /* background-color: blueviolet;
+    border: 1px dashed black; */
 }
 
 .debug main .container {
